@@ -1,9 +1,8 @@
 :root {
-    --dark-blue: #02334a;
-    --red: #c8203c;
+    --dark-blue: #022231;
+    --red: #df3350;
     --header-color: #ffffff;
     --paragraph-color: #e9dada;
-
 }
 
 * {
@@ -12,15 +11,15 @@
     box-sizing: border-box;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
-    font-family: sans-serif, 'Arial', 'Helvetica';
+    font-family: 'Helvetica', sans-serif, 'Arial';
 }
+
 
 
 /* HEADER STYLES*/
@@ -40,7 +39,7 @@ header #navBar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
+    height: 45px;
 }
 
 header #navBar #logo {
@@ -83,6 +82,8 @@ header #navBar ul a:hover::after {
     width: 100%;
 }
 
+
+
 /* HOME SECTION STYLES*/
 #home-section { 
     display: flex;
@@ -93,17 +94,79 @@ header #navBar ul a:hover::after {
     background-color:  black;
 }
 
-/* HOME SECTION STYLES*/
 #home-section #home-content h1{
     font-size: 70px;
     color: var(--header-color);
     margin:15px;
 }
 
-/* HOME SECTION STYLES*/
 #home-section #home-content p{
     font-size: 25px;
     color: var(--header-color);
     margin-bottom:35px;
+
+}
+
+
+
+/* ABOUT SECTION STYLES*/
+#about-section { 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 105vh;
+    background-color: var(--dark-blue);
+}
+
+#about-section .section-title{ 
+    color: var(--header-color);
+    font-size: 30px;
+    margin-top: 35px;;
+    letter-spacing: 0.1em;
+}
+
+#about-section #about-content{ 
+    display: flex;
+    color: var(--header-color);
+    font-size: 20px;
+
+}
+
+#about-section #about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+
+#about-section #about-content #picture-container{ 
+    height: 270px;
+    width: 300px;
+    margin-top: 25px;
+    color: var(--header-color);
+    font-size: 20px;
+    background-color: #000000;
+
+
+}
+
+#about-section #about-content #about-text{ 
+    height:250px;
+    max-width: 800px;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+#about-section #about-content #first-paragraph{ 
+    margin-bottom:20px;
+}
+
+#about-section #about-content #contact-message{ 
+    font-weight: bold;
+    font-size: 20px;
 
 }
