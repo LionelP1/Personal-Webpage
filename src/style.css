@@ -1,8 +1,15 @@
 :root {
     --dark-blue: #02334a;
+    --red: #c8203c;
     --header-color: #ffffff;
-    --paragraph-color: #cec9c9;
+    --paragraph-color: #e9dada;
 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -12,7 +19,7 @@ html {
 
 body {
     margin: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: sans-serif, 'Arial', 'Helvetica';
 }
 
 
@@ -22,7 +29,8 @@ header {
     width: 100%;
     top:0;
     right:0;
-    background-color: #ffffff;
+    background-color: var(--red);
+    color:var(--header-color);
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -32,7 +40,7 @@ header #navBar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 65px;
+    height: 60px;
 }
 
 header #navBar #logo {
@@ -42,7 +50,7 @@ header #navBar #logo {
 }
   
 
-header #navBar ul {
+header #navBar ul {  
     list-style: none;
     margin: 0;
     display: flex;
@@ -51,7 +59,7 @@ header #navBar ul {
 }
 
 header #navBar ul a{
-    color: #000000;
+    color:var(--header-color);
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
@@ -67,7 +75,7 @@ header #navBar ul a::after {
     bottom: -2px;
     width: 0%;
     height: 2px;
-    background-color: #ff0000; 
+    background-color: var(--header-color); 
     transition: width 0.3s ease;
 }
 
@@ -77,11 +85,25 @@ header #navBar ul a:hover::after {
 
 /* HOME SECTION STYLES*/
 #home-section { 
-    text-align: center;
     display: flex;
     flex-direction: column;
-    height: 100vh;
     justify-content: center;
-    border:1px solid black;
+    text-align: center;
+    height: 100vh;
+    background-color:  black;
 }
 
+/* HOME SECTION STYLES*/
+#home-section #home-content h1{
+    font-size: 70px;
+    color: var(--header-color);
+    margin:15px;
+}
+
+/* HOME SECTION STYLES*/
+#home-section #home-content p{
+    font-size: 25px;
+    color: var(--header-color);
+    margin-bottom:35px;
+
+}
