@@ -2,6 +2,7 @@
     --dark-blue: #02334a;
     --header-color: #ffffff;
     --paragraph-color: #cec9c9;
+
 }
 
 
@@ -17,8 +18,10 @@ body {
 
 /* HEADER STYLES*/
 header {
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top:0;
+    right:0;
     background-color: #ffffff;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -71,3 +74,14 @@ header #navBar ul a::after {
 header #navBar ul a:hover::after {
     width: 100%;
 }
+
+/* HOME SECTION STYLES*/
+#home-section { 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    border:1px solid black;
+}
+
