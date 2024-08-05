@@ -219,7 +219,7 @@ header #navBar ul a:hover::after {
     text-align: center;
     border:solid red 1px;
 }
-/*
+
 .project-card{
     
 }
@@ -237,26 +237,22 @@ header #navBar ul a:hover::after {
 }
 
 .project-tools{
-    
-}
-
-.project-tool{
-    
+    display:flex;
+    align-items: center;
 }
 
 .project-links{
     
-}*/
+}
 
 
-.repos-btn, .demo-btn{
-    width:150px;
+.repos-btn, .demo-btn, .project-tool{
+    width:140px;
     height:50px;
-    padding: 5px 10px;
+    padding: 0 auto;
     font-size: 20px;
     text-decoration: none;
-    color: var(--paragraph-color);
-    border-radius: 15px;
+    border-radius: 20px;
     margin: 5px;
     border: none;
     appearance: none;
@@ -265,15 +261,27 @@ header #navBar ul a:hover::after {
 
 .repos-btn {
     background-color: black;
+    color: white;
 }
 .demo-btn {
     background-color: #2397df;
+    color: white;
+}
+
+.project-tool {
+    width: auto;
+    height: 40px;
+    background-color: white;
+    color: black;
+    cursor: default;
+    padding: 0 20px;
+    font-size: 20px;
+    border-radius: 10px;
 }
 
 .repos-btn:hover {
     background-color: #333333;
 }
-
 
 .demo-btn:hover {
     background-color: #1a6ab8; 
