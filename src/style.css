@@ -219,7 +219,7 @@ header #navBar ul a:hover::after {
     text-align: center;
     border:solid red 1px;
 }
-
+/*
 .project-card{
     
 }
@@ -246,12 +246,35 @@ header #navBar ul a:hover::after {
 
 .project-links{
     
+}*/
+
+
+.repos-btn, .demo-btn{
+    width:150px;
+    height:50px;
+    padding: 5px 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--paragraph-color);
+    border-radius: 15px;
+    margin: 5px;
+    border: none;
+    appearance: none;
+    cursor: pointer;
 }
 
-.demo-btn{
-
+.repos-btn {
+    background-color: black;
+}
+.demo-btn {
+    background-color: #2397df;
 }
 
-.repos-btn{
+.repos-btn:hover {
+    background-color: #333333;
+}
 
+
+.demo-btn:hover {
+    background-color: #1a6ab8; 
 }
