@@ -116,12 +116,13 @@ header #navBar ul a:hover::after {
     text-align: center;
     height: 105vh;
     background-color: var(--dark-blue);
+    max-height: 700px;
 }
 
-#about-section .section-title{ 
+.section-title{ 
     color: var(--header-color);
     font-size: 30px;
-    margin-top: 35px;;
+    margin-top: 40px;;
     letter-spacing: 0.1em;
 }
 
@@ -170,3 +171,29 @@ header #navBar ul a:hover::after {
     font-size: 20px;
 
 }
+
+/* SKILL SECTION STYLES*/
+#skills-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+    background-color: black;
+    color:white;
+}
+
+#skills-section #skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; 
+    width: 70%;
+    align-items: center;
+}
+
+
+#skills-section #skill-container .skill-card {
+    width:95px;
+}
+
