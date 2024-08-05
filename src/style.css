@@ -116,7 +116,7 @@ header #navBar ul a:hover::after {
     text-align: center;
     height: 105vh;
     background-color: var(--dark-blue);
-    max-height: 700px;
+    max-height: 750px;
 }
 
 .section-title{ 
@@ -188,12 +188,15 @@ header #navBar ul a:hover::after {
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px; 
-    width: 70%;
+    width: 90%;
+    max-width: 800px;
     align-items: center;
+    margin: auto 0;
+    padding: 30px 0;
 }
 
 
 #skills-section #skill-container .skill-card {
-    width:95px;
+    width:90px;
 }
 
