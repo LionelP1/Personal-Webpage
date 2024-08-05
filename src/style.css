@@ -200,3 +200,58 @@ header #navBar ul a:hover::after {
     width:90px;
 }
 
+
+/* PROJECT SECTION STYLES*/
+#projects-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+    background-color: var(--dark-blue);
+    color:white;
+}
+
+#projects-section #project-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border:solid red 1px;
+}
+
+.project-card{
+    
+}
+
+.project-image{
+    
+}
+
+.project-title{
+    
+}
+
+.project-description{
+    
+}
+
+.project-tools{
+    
+}
+
+.project-tool{
+    
+}
+
+.project-links{
+    
+}
+
+.demo-btn{
+
+}
+
+.repos-btn{
+
+}
