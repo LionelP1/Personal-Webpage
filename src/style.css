@@ -183,7 +183,7 @@ header #navBar ul a:hover::after {
     color:white;
 }
 
-#skills-section #skill-container {
+#skill-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -218,7 +218,7 @@ header #navBar ul a:hover::after {
     flex-direction: column;
     height: auto;
     width: 80%;
-    max-width: 800px;
+    max-width: 700px;
     margin-bottom: 30px;
 }
 
@@ -226,14 +226,14 @@ header #navBar ul a:hover::after {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 15px;
+    margin-top: 40px;
 }
 
 .project-image{
     width:100%;
     height:auto;
     background-color: white;
-    margin:10px;
+    margin:20px;
     
 }
 
@@ -254,11 +254,6 @@ header #navBar ul a:hover::after {
     justify-content: center;
     margin: 15px 0;
 }
-
-.project-links{
-    
-}
-
 
 .repos-btn, .demo-btn, .project-tool{
     width: 140px;
@@ -300,3 +295,86 @@ header #navBar ul a:hover::after {
 .demo-btn:hover {
     background-color: #1a6ab8; 
 }
+
+
+/* OTHER PROJECT SECTION STYLES*/
+
+
+#other-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+    background-color: black;
+    color:white;
+}
+
+#other-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; 
+    width: 90%;
+    max-width: 1200px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.other-project {
+    display: block;
+    border-radius: 20px;
+    width: 350px;
+    height: auto; 
+    overflow: hidden;
+    border: #514c4c solid 4px;
+    z-index: 100;
+}
+  
+.other-project img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensure the image covers the <a> element completely */
+  }
+
+
+.other-project:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+/*
+.other-project{
+    text-align: center;
+    background-color: white;
+    border: solid rgb(210, 69, 69) 3px;
+    border-radius: 15px;
+    color: inherit;
+    min-width: 250px;
+    height:500px;
+}
+
+
+.project:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+  
+.other-project img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+  
+
+.project:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}*/
