@@ -124,6 +124,10 @@ header #navBar ul a:hover::after {
     height: 50px;
 }
 
+.github-link {
+    filter: brightness(0) invert(1);
+}
+
 
 
 
