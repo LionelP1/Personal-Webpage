@@ -107,6 +107,24 @@ header #navBar ul a:hover::after {
 
 }
 
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+  
+.contact-links a:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+  
+ .contact-links img {
+    width: 50px;
+    height: 50px;
+}
+
+
 
 
 /* ABOUT SECTION STYLES*/
@@ -336,7 +354,7 @@ header #navBar ul a:hover::after {
     display: block;
     width: 100%;
     height: auto;
-    object-fit: cover; /* Ensure the image covers the <a> element completely */
+    object-fit: cover;
   }
 
 
@@ -345,37 +363,22 @@ header #navBar ul a:hover::after {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-
-
-
-
-
-/*
-.other-project{
-    text-align: center;
-    background-color: white;
-    border: solid rgb(210, 69, 69) 3px;
-    border-radius: 15px;
-    color: inherit;
-    min-width: 250px;
-    height:500px;
+/* FOOTER SECTION STYLES*/
+#footer-section {
+    background-color: #333; 
+    color: #fff;        
+    text-align: center; 
+    padding: 30px 0;     
 }
 
-
-.project:hover {
-    transform: scale(1.02);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+#footer-section .footer-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #f5f5f5;
+    letter-spacing: 3px;
 }
   
-.other-project img {
-    width: 300px;
-    height: auto;
-    object-fit: cover;
+#footer-section p {
+    margin: 0;
+    font-size: 25px; 
 }
-
-  
-
-.project:hover {
-    transform: scale(1.02);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}*/
