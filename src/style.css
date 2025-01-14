@@ -376,7 +376,6 @@ header #navBar ul a:hover::after {
 
 /* OTHER PROJECT SECTION STYLES*/
 
-
 #other-section {
     display: flex;
     align-items: center;
@@ -387,7 +386,7 @@ header #navBar ul a:hover::after {
     color:white;
 }
 
-#other-container {
+.other-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
