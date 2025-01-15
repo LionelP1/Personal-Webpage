@@ -10,7 +10,7 @@
     <!-- Header -->
     <header>
       <nav id="navBar">
-        <p id="logo">Logo Here</p>
+        <p id="logo">Lionel P</p>
         <ul id="section-links">
           <li><a href="#home-section">Home</a></li>
           <li><a href="#about-section">About</a></li>
@@ -18,8 +18,21 @@
           <li><a href="#projects-section">Projects</a></li>
           <li><a href="#footer-section">Contacts</a></li>
         </ul>
+        <button id="menuButton" aria-label="Open menu">☰</button>
       </nav>
     </header>
+
+
+    <!-- Side Menu (For smaller devices)-->
+    <nav id="sideMenu">
+      <ul>
+        <li><a href="#home-section">Home</a></li>
+        <li><a href="#about-section">About</a></li>
+        <li><a href="#skills-section">Skills</a></li>
+        <li><a href="#projects-section">Projects</a></li>
+        <li><a href="#footer-section">Contacts</a></li>
+      </ul>
+    </nav>
 
     <!-- Home Page -->
     <section id="home-section">
@@ -34,7 +47,7 @@
             <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg" alt="LinkedIn Icon">
           </a>
           <a id="email-link" href="mailto:dinoguyhi@gmail.com" target="_blank">
-            <img src="images/mail.svg" alt="Email Icon">
+            <img src="images/mail.png" alt="Email Icon">
           </a>
         </div>
       </div>
@@ -49,12 +62,12 @@
         </div>
         <div id="about-text">
           <p id="first-paragraph">
-            Hello, I'm Lionel, a first-year Mathematics and Computer Science student 
+            Hello, I'm Lionel, a second-year Mathematics student 
             at the University of Toronto. I’m passionate about Software Engineering, 
             Machine Learning, and Full-Stack Development. I’m actively seeking opportunities 
             to apply my skills in real-world projects.
           </p>
-          <p id="contact-message">Feel free to contact me below!</p>
+          <p id="contact-message">Feel free to contact me!</p>
         </div>
       </div>
     </section>
@@ -88,10 +101,6 @@
           <p class="skill-name">C</p>
         </div>
         
-        <div class="skill-card">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="C++">
-          <p class="skill-name">C++</p>
-        </div>
         
         <div class="skill-card">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/webpack/webpack-original.svg" alt="Webpack">
@@ -104,11 +113,6 @@
         </div>
 
         <div class="skill-card">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="SASS">
-          <p class="skill-name">SASS</p>
-        </div>
-        
-        <div class="skill-card">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TypeScript">
           <p class="skill-name">TypeScript</p>
         </div>
@@ -117,21 +121,32 @@
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="Node.js">
           <p class="skill-name">Node.js</p>
         </div>
-        
+
+        <div class="skill-card">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg" alt="Express.js" style="filter: invert(1);">
+          <p class="skill-name">Express.js</p>
+        </div>
+
         <div class="skill-card">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="MongoDB">
           <p class="skill-name">MongoDB</p>
         </div>
         
         <div class="skill-card">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="MySQL">
-          <p class="skill-name">MySQL</p>
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+          <p class="skill-name">PostgreSQL</p>
         </div>
+        
         
         <div class="skill-card">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/prisma/prisma-original.svg" alt="Prisma.io">
           <p class="skill-name">Prisma.io</p>
         </div>
+
+        <div class="skill-card">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS">
+          <p class="skill-name">Tailwind CSS</p>
+        </div>      
         
       </div>
     </section>
@@ -142,71 +157,138 @@
 
       <div id="project-container">
         <div class="project-card">
-            <img class="project-image" src="images/screenshot.png" alt="Project name">
-            <h4 class="project-title">Project 1</h4>
-            <p class="project-description">
-              A delightful Minecraft-themed memory challenge game! This project started as a fun side venture, a sandbox for me to delve into the depths of ReactJS and TailwindCSS. It's not just a game—it's a representation of my learning journey.
-            </p>
-
-            <div class="project-tools">
-              <button class="project-tool">HTML</button>
-              <button class="project-tool">CSS</button>
-              <button class="project-tool">JavaScript</button>
-              <button class="project-tool">React</button>
-            </div>
-
-            <div class="project-links">
-              <button class="demo-btn">Live Demo</button>
-              <button class="repos-btn">GitHub Repo</button>
-            </div>
-        </div>
-
-        <div class="project-card">
-          <img class="project-image" src="images/screenshot.png" alt="Project name">
-          <h4 class="project-title">Project 1</h4>
+          <img class="project-image" src="images/ai-podcast-generator.png" alt="AI Podcast Generator">
+          <h4 class="project-title">AI Podcast Generator</h4>
           <p class="project-description">
-            A delightful Minecraft-themed memory challenge game! This project started as a fun side venture, a sandbox for me to delve into the depths of ReactJS and TailwindCSS. It's not just a game—it's a representation of my learning journey.
-          </p>
-
+            This project allows users to create AI-generated podcasts effortlessly by 
+            leveraging Gemini AI for text generation and Google Text-to-Speech (TTS) 
+            for audio synthesis. Designed to simplify audio content creation, it 
+            combines cutting-edge AI tools with modern web development technologies. 
+            Whether for personal storytelling or professional broadcasting, this tool 
+            enables users to produce engaging and high-quality podcasts with just a few 
+            clicks.
+          </p>          
+      
           <div class="project-tools">
-            <button class="project-tool">HTML</button>
-            <button class="project-tool">CSS</button>
             <button class="project-tool">JavaScript</button>
+            <button class="project-tool">Node.js</button>
+            <button class="project-tool">Express</button>
             <button class="project-tool">React</button>
+            <button class="project-tool">TailwindCSS</button>
+            <button class="project-tool">DaisyUI</button>
+            <button class="project-tool">Google Cloud Services</button>
           </div>
-
+      
           <div class="project-links">
-            <button class="demo-btn">Live Demo</button>
-            <button class="repos-btn">GitHub Repo</button>
+            <a class="demo-btn" href="https://ai-podcast-generator-9ai4.onrender.com/">Live Demo</a>
+            <a class="repos-btn" href="https://github.com/LionelP1/Ai-Podcast-Generator">GitHub Repo</a>
           </div>
         </div>
       </div>
+
+      <div id="project-container">
+        <div class="project-card">
+          <img class="project-image" src="images/chat-app.png" alt="Chat App">
+          <h4 class="project-title">Real-Time Chat App</h4>
+          <p class="project-description">
+            A real-time chat app for seamless communication, built with JavaScript, 
+            Node.js, Express, React, DaisyUI, MongoDB, and WebSockets. It features user
+             authentication, dynamic updates, and a responsive interface, ensuring fast 
+             and reliable messaging.
+          </p>
+          
+      
+          <div class="project-tools">
+            <button class="project-tool">JavaScript</button>
+            <button class="project-tool">Node.js</button>
+            <button class="project-tool">Express</button>
+            <button class="project-tool">React</button>
+            <button class="project-tool">DaisyUI</button>
+            <button class="project-tool">MongoDB</button>
+            <button class="project-tool">WebSockets</button>
+          </div>
+      
+          <div class="project-links">
+            <a class="demo-btn" href="https://chat-app-xz4i.onrender.com/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            <a class="repos-btn" href="https://github.com/LionelP1/chat-app/" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+      
     </section>
 
 
-     <!-- Other Projects Section -->
+    <!-- Other Projects Section -->
     <section id="other-section">
       <h3 class="section-title">─ Other Projects ─</h3>
 
-      <div id="other-container">
-        <a href="https://lpei1900.github.io/tic-tac-toe/" class="other-project">
-          <img src="images/project-logos/Tic-Tac-Toe-Logo.png" alt=">Tic Tac Toe">
+      <div class="other-container">
+        <a href="https://ai-podcast-generator-9ai4.onrender.com/" class="other-project" target="_blank">
+          <img class="images" src="images/project-logos/ai-podcast-generator.png" alt="AI Podcast Generator">
         </a>
-        <a href="https://lpei1900.github.io/library-project/" class="other-project">
-            <img src="images/project-logos/Library-Logo.png" alt=">Library">
+
+        <a href="https://ai-text-summarizer-w9xe.onrender.com" class="other-project" target="_blank">
+          <img class="images" src="images/project-logos/ai-text-summarizer.png" alt=">AI Text Summarizer">
         </a>
-        <a href="https://lpei1900.github.io/Word-Counter/" class="other-project">
-            <img src="images/project-logos/Word-Counter.svg" alt=">Word Counter">
+
+        <a href="https://chat-app-xz4i.onrender.com" class="other-project" target="_blank">
+          <img class="images" src="images/project-logos/chat-app.png" alt=">Chat App">
         </a>
-        <a href="https://lpei1900.github.io/Sketch-Pad/" class="other-project">
-            <img src="images/project-logos/Sketch-Pad-Logo.png" alt=">Sketch Pad">
+
+        <a href="https://file-uploader-production-155a.up.railway.app/" class="other-project" target="_blank">
+          <img class="images" src="images/project-logos/file-uploader.png" alt="File Uploader">
         </a>
-        <a href="https://lpei1900.github.io/Click-Counter/" class="other-project">
-            <img src="images/project-logos/Click-Speed-Logo.png" alt=">Click Counter">
+
+        <a href="https://members-only-production-930c.up.railway.app/login" class="other-project" target="_blank">
+          <img class="images" src="images/project-logos/secret-clubhouse-logo.png" alt="Secret Clubhouse">
+        </a>
+
+        <a href="https://inventory-app-1-ketf.onrender.com" class="other-project" target="_blank">
+          <img class="images" src="images/project-logos/inventory-logo.png" alt="Tic Tac Toe">
+        </a>
+
+        <a href="https://mini-message-board-fx7f.onrender.com" class="other-project" target="_blank">
+          <img class="images" src="images/project-logos/message-board-logo.png" alt="Tic Tac Toe">
+        </a>
+
+        <a href="https://battleship-application.netlify.app/" class="other-project" target="_blank">
+          <img class="images" src="images/project-logos/battleship-logo.png" alt=">Tic Tac Toe">
+        </a>
+
+        <a href="https://memory-game-site-application.netlify.app/" class="other-project" target="_blank">
+          <img class="images" src="images/project-logos/memory-game-logo.png" alt=">Tic Tac Toe">
+        </a>
+
+        <a href="https://weather-finder-project.netlify.app/" class="other-project" target="_blank">
+          <img class="images" src="images/project-logos/weather-app-logo.png" alt=">Tic Tac Toe">
+        </a>
+
+        <a href="https://lionelp1.github.io/Connect-Four/" class="other-project" target="_blank">
+          <img class="images" src="images/project-logos/connect-four-logo.png" alt=">Tic Tac Toe">
+        </a>
+
+        <a href="https://lionelp1.github.io/tic-tac-toe/" class="other-project" target="_blank">
+          <img class="images" src="images/project-logos/Tic-Tac-Toe-Logo.png" alt=">Tic Tac Toe">
+        </a>
+
+        <a href="https://lionelp1.github.io/Click-Counter/" class="other-project" target="_blank">
+          <img class="images" src="images/project-logos/Click-Speed-Logo.png" alt=">Click Counter">
+        </a>
+
+        <a href="https://lionelp1.github.io/library-project/" class="other-project" target="_blank">
+          <img class="images" src="images/project-logos/Library-Logo.png" alt=">Library">
+        </a>
+
+        <a href="https://lionelp1.github.io/Word-Counter/" class="other-project" target="_blank">
+          <img class="images" src="images/project-logos/Word-Counter.svg" alt=">Word Counter">
+        </a>
+
+        <a href="https://lionelp1.github.io/Sketch-Pad/" class="other-project" target="_blank">
+          <img class="images" src="images/project-logos/Sketch-Pad-Logo.png" alt=">Sketch Pad">
         </a>
       </div>
-
     </section>
+
 
     <!-- Footer -->
     <footer id="footer-section">
@@ -218,8 +300,8 @@
         <a class="linkedin-link" href="https://www.linkedin.com/in/PUT-USERNAME/" target="_blank">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg" alt="LinkedIn Icon">
         </a>
-        <a id="email-link" href="mailto:dinoguyhi@gmail.com" target="_blank">
-          <img src="images/mail.svg" alt="Email Icon">
+        <a id="email-link" href="mailto:lionel.p1903@gmail.com" target="_blank">
+          <img src="images/mail.png" alt="Email Icon">
         </a>
       </div>
       <p>&copy; 2024 Lionel P</p>
